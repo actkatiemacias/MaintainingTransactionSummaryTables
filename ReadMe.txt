@@ -29,6 +29,10 @@ The run_saleS_result stored prodcedure takes as a parameter the sales_period_sid
 
 Considerations:
 
+Overall Considerations: The rule that either sales_product_sid or sales_product_list_sid would be populated (never both) and the other would be null
+drove a lot of the logic. To makes sure that I captured all possible paths, for every requirement the logic was split into two parts,
+when the underlying data had sales_product_sid populated or when the underlying data had sales_product_list_sid populated.
+
 Task #1: Could maintain the sales_transaction_summary table via trigger or stored procedure
 	triggers are always executed, stored procedures must be explicitly called - task #1 stated that this code must 'effectively execute every time data in the table "sales_transaction" is Inserted or Delete" so I used triggers
 
