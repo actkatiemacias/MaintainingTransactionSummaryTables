@@ -1,8 +1,7 @@
 Project:  RSS Programming project
 Author: Katie Macias
 Date: 6/11/2013
-
-Description: 
+Problem description: RSS_Programming_Test.pdf
 
 The following files:
 
